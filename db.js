@@ -252,6 +252,15 @@ var db = [
     "id": "Beautiful Girl HD.jpg"
   },
   {
+    "eyecatch": "Beautiful Girl MX.jpg",
+    "title": "Beautiful Girl",
+    "artist": "DJ Keri",
+    "genre": "Electro House",
+    "pattern": "MX",
+    "difficulty": 8,
+    "id": "Beautiful Girl MX.jpg"
+  },
+  {
     "eyecatch": "Beautiful Girl NM.jpg",
     "title": "Beautiful Girl",
     "artist": "DJ Keri",
@@ -268,6 +277,15 @@ var db = [
     "pattern": "HD",
     "difficulty": 6,
     "id": "Become Myself HD.jpg"
+  },
+  {
+    "eyecatch": "Become Myself MX.jpg",
+    "title": "Become Myself",
+    "artist": "PIA",
+    "genre": "Hard Core",
+    "pattern": "MX",
+    "difficulty": 8,
+    "id": "Become Myself MX.jpg"
   },
   {
     "eyecatch": "Become Myself NM.jpg",
@@ -2448,6 +2466,15 @@ var db = [
     "id": "My Heart My Soul HD.jpg"
   },
   {
+    "eyecatch": "My Heart My Soul MX.jpg",
+    "title": "My Heart, My Soul",
+    "artist": "3rd Coast",
+    "genre": "R&B Slow",
+    "pattern": "MX",
+    "difficulty": 7,
+    "id": "My Heart My Soul MX.jpg"
+  },
+  {
     "eyecatch": "My Heart My Soul NM.jpg",
     "title": "My Heart, My Soul",
     "artist": "3rd Coast",
@@ -3708,6 +3735,15 @@ var db = [
     "id": "White Blue NM.jpg"
   },
   {
+    "eyecatch": "Xeus HD.jpg",
+    "title": "Xeus",
+    "artist": "XeoN",
+    "genre": "Melodic Trance",
+    "pattern": "HD",
+    "difficulty": 11,
+    "id": "Xeus HD.jpg"
+  },
+  {
     "eyecatch": "Xeus NM.jpg",
     "title": "Xeus",
     "artist": "XeoN",
@@ -3769,6 +3805,15 @@ var db = [
     "pattern": "HD",
     "difficulty": 5,
     "id": "You & Me HD.jpg"
+  },
+  {
+    "eyecatch": "You & Me MX.jpg",
+    "title": "You & Me",
+    "artist": "NieN",
+    "genre": "K-Pop",
+    "pattern": "MX",
+    "difficulty": 7,
+    "id": "You & Me MX.jpg"
   },
   {
     "eyecatch": "You & Me NM.jpg",

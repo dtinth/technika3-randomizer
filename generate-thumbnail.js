@@ -10,7 +10,12 @@ async.forEachSeries(db, function(pattern, callback) {
   var eyecatch = pattern.eyecatch
     , image = new Canvas.Image
   console.log(eyecatch)
-  image.src = fs.readFileSync('eyecatch/' + eyecatch)
+  try {
+    image.src = fs.readFileSync('eyecatch/' + eyecatch)
+  } catch (e) {
+    console.log('not found')
+    return callback()
+  }
 
   var c1 = new Canvas(image.width, image.height)
     , ct1 = c1.getContext('2d')
