@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset=utf-8><title>Technika 3 Randomizer</title>
+<link rel=stylesheet href=css.css>
+<body>
+
+<!-- 1184x1212 -->
+
+<div id="container">
+  <div id="songs">
+    <div id="songlist"></div>
+    <div id="banner" class="hidden">
+      <div id="song-info">
+        <div><span id="song-title">Song Title</span>
+          <span id="song-pattern"></span></div>
+        <div id="song-genre">Genre</div>
+        <div id="song-artist">Artist</div>
+      </div>
+      <div id="song-stars"></div>
+    </div>
+  </div>
+  <div id="overlay">
+  </div>
+  <div id="report-container" class="hidden">
+    <div id="report">
+      <h1>Song Report Will Display Here</h1>
+    </div>
+    <div id="report-close">X</div>
+  </div>
+  <button id="randomize">Randomize</button>
+  <div id="results">
+    <div class="result" id="result1">result1</div>
+    <div class="result" id="result2">result2</div>
+    <div class="result" id="result3">result3</div>
+  </div>
+  <div id="levelpick"></div>
+  <div id="l_clear">CLEAR</div>
+</div>
+<div id="toolbar">
+  <button style="display:none" id="b_clear">Clear Result</button
+  ><button id="b_history">History</button
+  ><button style="display:none" id="b_list">Song List</button><span id="padder"></span>
+</div>
+
+
+<script src="db.js"></script>
+<script src="jquery-1.8.1.js"></script>
+<script src="randomizer.js"></script>

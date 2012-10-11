@@ -1,0 +1,183 @@
+
+body {
+  background: #000;
+}
+
+#container {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -592px;
+  margin-left: -606px;
+  width: 1184px;
+  height: 1212px;
+  background: url(ui.jpg);
+}
+
+#songs, #overlay, #report-container {
+  left: 118px;
+  top: 204px;
+  width: 960px;
+  height: 540px;
+  position: absolute;
+}
+#report {
+  background: white;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  font: 25px Verdana, sans-serif;
+}
+#report-close { top: 30px; right: 30px; background: #ccc; color: #000; font: 30px Arial;
+  width: 50px; height: 50px; text-align: center; line-height: 50px; position: absolute;
+  cursor: pointer; }
+.hidden#report-container {
+  display: none;
+}
+#songs {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#songlist {
+  position: relative;
+}
+
+#songlist img {
+  display: block;
+}
+
+#overlay {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  box-shadow: inset 0 0 80px black;
+}
+
+#randomize {
+  position: absolute;
+  left: 473px;
+  top: 820px;
+  width: 164px;
+  height: 128px;
+  background: url(button-normal.png) no-repeat;
+  border: 0; padding: 0; margin: 0;
+  text-indent: -999px;
+}
+
+#randomize:hover {
+  background: url(button-active.png) no-repeat;
+}
+
+.disabled#randomize {
+  background: url(button-disabled.png) no-repeat;
+}
+
+#results {
+  position: absolute;
+  left: 696px;
+  top: 852px;
+  width: 355px;
+}
+.result {
+  background: #fff;
+  height: 38px;
+  margin-bottom: 22px;
+  font: bold 25px/38px Arial;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  border: 2px solid #9bd;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.result b { color: #777; }
+
+
+#levelpick {
+  position: absolute;
+  top: 845px;
+  left: 130px;
+  width: 360px;
+}
+.checkbox {
+  float: left;
+  margin-right: 53px;
+  margin-bottom: 48px;
+  background: #fff;
+  width: 23px; height: 23px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  box-shadow: inset 0 1px 2px #38c;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox-in {
+  position: absolute;
+  top: 4px; right: 4px; bottom: 4px; left: 4px;
+  background: #d3b;
+  border-radius: 6px;
+  box-shadow:
+    inset 0 0 4px #a08,
+    inset 0 0 4px #a08,
+    inset 0 5px 7px #fae;
+  opacity: 1;
+  -webkit-transition: 0.1s opacity;
+}
+.checkbox:not(.checked) .checkbox-in {
+  opacity: 0;
+}
+
+#toolbar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  background: #333;
+  opacity: 0.8;
+  -webkit-transition: 0.5s opacity;
+}
+
+#toolbar button {
+  background: #444;
+  border: 6px solid #555;
+  margin-right: -6px;
+  color: #eee;
+  font-size: 40px;
+  padding: 10px;
+}
+#toolbar button:hover {
+  background: #555;
+}
+#toolbar button:active {
+  background: #000;
+}
+#toolbar:not(:hover) { opacity: 0; }
+#padder { display: inline-block; width: 10px; }
+
+table.songs { width: 100%; }
+table.songs td { padding: 6px; }
+td.clear { text-align: right; padding-right: 48px; }
+td.clear span { color: #f00; cursor: pointer; }
+
+#l_clear { color: #fff; top: 1050px; right: 140px; position: absolute; font: 24px Arial;
+cursor: pointer; opacity: 0.6; }
+.emph#l_clear { opacity: 1; text-shadow: 4px 4px 1px #a00; font-weight: bold; }
+.hidden#l_clear { opacity: 0; }
+
+
+#banner {
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.0);
+  color: #fff;
+  font: 50px Georgia;
+  -webkit-transition: 1s bottom;
+  height: 30px;
+}
+.hidden#banner { bottom: -540px; }
+#song-info { display: none; }
+#song-genre { font-size: 0.7em; }
+#song-artist { font-size: 0.7em; }
+#song-pattern { opacity: 0.6; font-size: 0.7em; }
+#song-stars { bottom: 10px; right: 10px; height: 48px; position: absolute; }
+span.star { width: 48px; height: 48px; display: inline-block;
+  background: url(star.png) center center no-repeat; }
